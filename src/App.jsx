@@ -19,37 +19,10 @@ function App() {
   });
 
 
-  const PageScroll  =()=>{
-const { pathname, hash, key } = useLocation();
-
-useEffect(() => {
-  // if not a hash link, scroll to top
-  if (hash === '') {
-    window.scrollTo(0, 0);
-  }
-  // else scroll to id
-  else {
-    setTimeout(() => {
-      const id = hash.replace('#', '');
-      const element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView();
-      }
-    }, 1000);
-  }
-
-   // close menu on route change
-   const menuList = document.querySelector('nav')
-   menuList.classList.remove('show')
-   
-}, [pathname, hash, key]); // do this on route change
-  }
-
 
   return (
     <div className='bg-darkPurple text-white overflow-hidden'>
        <Router>
-        <PageScroll />
         <Routes>
       <Route path="/" element={<Landing />} />
       <Route path="/contact" element={<Contact />} />
