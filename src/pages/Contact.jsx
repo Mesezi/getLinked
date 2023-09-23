@@ -5,10 +5,7 @@ import SuccessPopUp from "../components/Popup/SuccessPopUp";
 import { useForm } from "react-hook-form";
 
 const Contact = () => {
-  const [message, setMessage] = useState({
-    type: "registration",
-    status: "success",
-  });
+  const [message, setMessage] = useState(null);
 
   const {
     register,
@@ -40,13 +37,20 @@ fetch(`${baseUrl}/hackathon/contact-form`, requestOptions)
 })
 reset()
 })
-.catch(error => console.log('error', error));
+.catch(error => {setMessage({
+  status: "failed",
+})
+});
 
     }
 
 
   return (
     <main className="flex flex-col min-h-screen">
+       {message && message.status === "success" ? 
+        <SuccessPopUp message={message} setMessage={setMessage} />
+      : <FailurePopUp />
+  }
       <div className="hidden lg:block">
         <Navbar />
       </div>

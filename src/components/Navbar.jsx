@@ -18,7 +18,7 @@ const Navbar = () => {
         <div className='container z-50 px-10 sm:px-0 mx-auto h-20 lg:h-[90px] flex justify-between items-center'>
             <NavLink to={'/'}> <img src={"/assets/logo.png"} className='h-6 object-contain' alt="" /></NavLink>
            
-            <nav className='fixed h-full lg:h-auto bg-darkPurple lg:bg-transparent lg:static top-0 left-0 w-full lg:w-auto z-10'>
+            <nav className='fixed h-full lg:h-auto bg-darkPurple lg:bg-transparent lg:static top-0 left-0 w-full lg:w-auto z-[9999]'>
                 <ul className='flex flex-col lg:flex-row w-full lg:w-auto p-12 lg:p-0
                  gap-8 lg:bg-transparent lg:gap-12 text-lg lg:text-sm lg:items-center'>
                     <li className='flex lg:hidden justify-end mb-5'>

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import SuccessPopUp from "../components/Popup/SuccessPopUp";
 import Dropdown from "../components/Dropdown";
 import { useForm } from "react-hook-form";
+import FailurePopUp from "../components/Popup/FailurePopUp";
 
 const Register = () => {
   const baseUrl = "https://backend.getlinked.ai";
@@ -77,17 +78,18 @@ const Register = () => {
         status: "success",
       })
       reset()
+    }).catch(error => {setMessage({
+      status: "failed",
     })
-      .catch(error => console.log('error', error));
+    });
   };
 
   return (
     <main className="flex flex-col min-h-screen">
-      {message && message.status === "success" ? (
+      {message && message.status === "success" ? 
         <SuccessPopUp message={message} setMessage={setMessage} />
-      ) : (
-        ""
-      )}
+      : <FailurePopUp />
+  }
 
       <div className="hidden lg:block">
         <Navbar />

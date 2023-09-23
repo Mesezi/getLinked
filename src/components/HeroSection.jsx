@@ -23,7 +23,7 @@ const HeroSection = () => {
 
   return (
     <section className="flex flex-col gap-10 lg:h-[calc(100vh-90px)] border-white/10 border-b-[1px]"> 
-    <div className="pt-4 font-bold italic  container mx-auto z-10">
+    <div className="pt-4 font-bold italic container mx-auto">
      
       <div className="flex justify-center lg:justify-end items-center relative">
 <span ref={el} className="text-xl text-center lg:text-right lg:text-3xl font-bold lg:h-12"/>
