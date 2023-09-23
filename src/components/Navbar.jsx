@@ -4,32 +4,6 @@ import { Link, NavLink, useLocation } from 'react-router-dom'
 const Navbar = () => {
     const [menuToggle, setMenuToggle] = useState(false)
     
-    const PageScroll  =()=>{
-const { pathname, hash, key } = useLocation();
-
-useEffect(() => {
-  // if not a hash link, scroll to top
-  if (hash === '') {
-    window.scrollTo(0, 0);
-  }
-  // else scroll to id
-  else {
-    setTimeout(() => {
-      const id = hash.replace('#', '');
-      const element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView();
-      }
-    }, 1000);
-  }
-
-   // close menu on route change
-    setMenuToggle(false)
-   
-}, [pathname, hash, key]); // do this on route change
-  }
-
-
     useEffect(()=>{
         const nav = document.querySelector('nav')
         if(menuToggle){
@@ -41,7 +15,6 @@ useEffect(() => {
 
   return (
     <header className='border-b-[1px] border-white/10 w-full relative z-10'>
-        <PageScroll />
         <div className='container z-50 px-10 sm:px-0 mx-auto h-20 lg:h-[90px] flex justify-between items-center'>
             <NavLink to={'/'}> <img src={"/assets/logo.png"} className='h-6 object-contain' alt="" /></NavLink>
            
