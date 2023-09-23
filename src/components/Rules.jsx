@@ -14,10 +14,13 @@ const Rules = () => {
     <img src="/assets/gray star.png" className="absolute twinkle-animation h-4 lg:h-auto right-0 bottom-[80%] lg:right-[39%] lg:bottom-[79%]" alt="" />
             <h2 
             data-aos="zoom-in-down"
-            data-aos-duration="1500"
+            data-aos-duration="1000"
             className='font-CdSemiBold text-[20px] lg:text-4xl tracking-normal'>Rules and
             <br/ ><span className='text-lightPurple font-CdBold'>Guidelines</span></h2>
-            <p className='lg:text-[14px] lg:font-[200] leading-[28px] relative'>
+            <p 
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            className='lg:text-[14px] lg:font-[200] leading-[28px] relative'>
             Our tech hackathon is a melting pot of visionaries, and its purpose is as
 clear as day: to shape the future. Whether you're a coding genius, a 
 design maverick, or a concept wizard, you'll have the chance to transform 
@@ -30,7 +33,7 @@ that's what we're all about!
 
       <div className='flex justify-center relative'
       data-aos="zoom-in-up"
-      data-aos-duration="1500">
+      data-aos-duration="1000">
           <img src="/assets/rules.png" 
           className='object-contain' alt="" />
           <img src="/assets/white star.png" className='absolute twinkle-animation top-[50%] lg:hidden h-4 md:h-auto left-0' alt="" />

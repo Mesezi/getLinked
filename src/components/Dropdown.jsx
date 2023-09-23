@@ -21,9 +21,9 @@ const Dropdown = ({placeHolderValue, options, setValue}) => {
     onMouseEnter={()=>setDropdownToggle(true)}
     onMouseLeave={()=>setDropdownToggle(false)}
   >
-    <div className="flex h-full w-full px-4 items-center justify-between">
+    <div className="flex h-full w-full px-4 items-center justify-between text-sm">
        {selectedValue ? selectedValue : placeHolderValue} 
-       <svg className='group-hover:-rotate-180 ease-in-out duration-200' width="13" height="9" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <svg className='group-hover:-rotate-180 ease-in-out duration-200 h-3 w-3'  viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M1 1L6.5 7L11.5 1" stroke="white" stroke-width="2"/>
 </svg>
 

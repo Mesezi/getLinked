@@ -7,36 +7,36 @@ const Privacy = () => {
     <article className='max-w-[569px] mx-auto lg:pt-16 relative'>
           <h2
           data-aos="zoom-in-down"
-          data-aos-duration="1500"
+          data-aos-duration="1000"
           className="font-CdSemiBold text-[20px] text-center lg:text-start lg:text-4xl tracking-normal relative">
             Privacy Policy and 
             <br />
             <span className="text-lightPurple font-CdBold">Terms</span>
-            <img src="/assets/gray star.png" className='absolute twinkle-animation h-3 md:h-auto top-[-40%] lg:top-[-5%] right-[20%] lg:right-[20%]' alt="" />
+            <img src="/assets/gray star.png" className='absolute twinkle-animation h-3 md:h-auto top-[-40%] lg:top-[-5%] right-[20%] lg:right-[20%]' alt="star" />
           </h2>
 
           <div className='text-sm my-5 space-y-8 max-w-md mx-auto lg:mx-0 text-center lg:text-start'>
           <p
           data-aos="fade-right"
-          data-aos-duration="1500"
+          data-aos-duration="1000"
           data-aos-offset="400">Last updated on September 12, 2023</p>
           <p
           data-aos="fade-right"
-          data-aos-duration="1500"
+          data-aos-duration="1000"
           data-aos-offset="400" 
           className='leading-5'>Below are our privacy & policy, which outline a lot of goodies.
 it’s our aim to always take of our participant</p>
           </div>
 
-          <img src="/assets/flare.png" className='absolute blend-mode left-[-40%] bottom-[-10%] lg:bottom-[-15%] ' alt="" />
+          <img src="/assets/flare.png" className='absolute blend-mode left-[-40%] bottom-[-10%] lg:bottom-[-15%] ' alt="flare image" />
 
           <article 
           data-aos="fade-right"
-          data-aos-duration="1500"
+          data-aos-duration="1000"
           data-aos-offset="400"
           className='border-[1px] p-12 px-6 lg:px-12 mt-10 bg-[#d9d9d908] text-sm rounded-[5px] border-lightPurple relative'>
-          <img src="/assets/purple star.png" className='absolute twinkle-animation h-4 md:h-6 top-[-6%] lg:top-[-25%] object-contain right-[5%] lg:right-[-1%]' alt="" />
-          <img src="/assets/purple star.png" className='absolute twinkle-animation h-3 md:h-6 left-[-5%] lg:left-[-10%] bottom-[20%] lg:bottom-[30%] z-10' alt="" />
+          <img src="/assets/purple star.png" className='absolute twinkle-animation h-4 md:h-6 top-[-6%] lg:top-[-25%] object-contain right-[5%] lg:right-[-1%]' alt="star" />
+          <img src="/assets/purple star.png" className='absolute twinkle-animation h-3 md:h-6 left-[-5%] lg:left-[-10%] bottom-[20%] lg:bottom-[30%] z-10' alt="star" />
           <p className='leading-8 text-center lg:text-start '>
           At getlinked tech Hackathon 1.0, we value your privacy
 and are committed to protecting your personal information.
@@ -83,7 +83,7 @@ sites, for your project developement</p>
 
     <div
     data-aos="fade-up"
-    data-aos-duration="1500"
+    data-aos-duration="1000"
     data-aos-offset="400"
     className='flex items-end'>
 
@@ -97,13 +97,13 @@ sites, for your project developement</p>
 </linearGradient>
 </defs>
 </svg>
-<img src="/assets/purple star.png" className='absolute twinkle-animation h-7 object-contain lg:hidden top-12 left-0' alt="" />
-<img src="/assets/white star.png" className='absolute twinkle-animation h-3 object-contain md:h-5 top-16  lg:top-0 right-[27%]' alt="" />
-<img src="/assets/white star.png" className='absolute twinkle-animation h-5 object-contain bottom-[22%] left-[13%] lg:left-[23%]' alt="" />
-<img src="/assets/gradient star.png" className='absolute twinkle-animation h-4 object-contain hidden lg:inline-block bottom-[41%] left-[35%]' alt="" />
-<img src="/assets/gray star.png" className='h-3 md:h-auto twinkle-animation object-contain absolute bottom-[23%] right-[1%] lg:right-[-3%]' alt="" />
+<img src="/assets/purple star.png" className='absolute twinkle-animation h-7 object-contain lg:hidden top-12 left-0' alt="star" />
+<img src="/assets/white star.png" className='absolute twinkle-animation h-3 object-contain md:h-5 top-16  lg:top-0 right-[27%]' alt="star" />
+<img src="/assets/white star.png" className='absolute twinkle-animation h-5 object-contain bottom-[22%] left-[13%] lg:left-[23%]' alt="star" />
+<img src="/assets/gradient star.png" className='absolute twinkle-animation h-4 object-contain hidden lg:inline-block bottom-[41%] left-[35%]' alt="star" />
+<img src="/assets/gray star.png" className='h-3 md:h-auto twinkle-animation object-contain absolute bottom-[23%] right-[1%] lg:right-[-3%]' alt="star" />
 
-        <img src="/assets/man-padlock.png" className='object-contain w-full h-full absolute bottom-0 z-10' alt="" />
+        <img src="/assets/man-padlock.png" className='object-contain w-full h-full absolute bottom-0 z-10' alt="Privacy man" />
 </div>
 
   

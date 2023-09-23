@@ -8,7 +8,13 @@
 	display: none;
 } */
 
+
 *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   scroll-behavior: smooth;
 }
 
@@ -21,30 +27,19 @@ font-family: 'Unica One', cursive;
 }
 
 ::-webkit-scrollbar {
-  width: 8px; /* Set the width of the scrollbar */
+  width: 8px; 
 }
 
-/* Track (the area on which the thumb rests) */
 ::-webkit-scrollbar-track {
-  background: #150E28; /* Background color of the track */
+  background-color: #150E28;
 }
 
-/* Handle (the draggable part of the scrollbar) */
 ::-webkit-scrollbar-thumb {
-  background: #903AFF; /* Color of the scrollbar handle */
+  background: #903AFF;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #903AFF; /* Color of the scrollbar handle on hover */
-}
-
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  background: #903AFF; 
 }
 
 
@@ -57,11 +52,20 @@ nav.show{
   transform: translateX(0);
 }
 
+nav li > a:hover{
+  background: linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all ease-in-out 500ms;
+}
+
+
 html{
   font-size: 13px;
 }
 
-.grid-container {
+.hero-container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -99,7 +103,7 @@ html{
   }
 
   100% {
-    transform: scale(7);
+    transform: scale(2);
     opacity: 0;
   }
  }
@@ -109,7 +113,10 @@ html{
   animation-delay: 1s;
 }
 
-.input-field, form input[type="text"], .form-box form input[type="mail"], .form-box form textarea{
+.input-field, form input[type="text"],
+ form input[type="mail"],
+ form input[type="number"],
+ form textarea{
   border-radius: 4px;
 border: 1px solid #FFF;
 background: rgba(255, 255, 255, 0.03);
@@ -118,7 +125,9 @@ outline: 0;
 width: 100%;
 }
 
-form input[type="text"]:focus, .form-box form input[type="mail"]:focus, .form-box form textarea:focus{
+form input[type="text"]:focus, 
+form input[type="mail"]:focus, 
+form textarea:focus{
 border: 1px solid #D434FE;
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
@@ -205,7 +214,7 @@ background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, 
     font-size: 17px;
   }
 
-  .grid-container {
+  .hero-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -220,7 +229,7 @@ background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, 
     grid-area: 1 / 2 / 1 / 9; /* Start at row 1, column 1, end at row 3, column 2 */
   }
 
-  .timeline_2{
+  .timeline{
     display: flex;
     flex-direction: column;
     align-items: center;
