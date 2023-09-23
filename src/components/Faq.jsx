@@ -38,7 +38,7 @@ const Faq = () => {
           </h2>
           <p className='lg:text-[14px] font-[200] leading-[2rem] mx-auto lg:mx-0 lg:max-w-xs'>
           We got answers to the questions that you might
-          want to ask <bold>about getlinked Hackathon 1.0</bold>
+          want to ask <span className='font-bold'>about getlinked Hackathon 1.0</span>
           </p>
 
           <div className='mt-5 text-sm space-y-4'>

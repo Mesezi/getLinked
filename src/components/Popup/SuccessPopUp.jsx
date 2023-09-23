@@ -54,8 +54,7 @@ const SuccessPopUp = ({ setMessage, message }) => {
         <img src="/assets/purple star.png" className="absolute twinkle-animation top-[-5%] right-[-5%] object-contain h-6" alt="" />
         <img src="/assets/gradient star.png" className="absolute twinkle-animation bottom-[-5%] right-10 object-contain h-6 md:h-auto" alt="" />
         {message.type === "registration" && <RegistrationSuccess />}
-
-        {message.type === "contact" && <FailurePopUp />}
+        {message.type === "contact" && <ContactSuccess />}
         <button
           onClick={() => setMessage(null)}
           className="gradient py-3 w-full"

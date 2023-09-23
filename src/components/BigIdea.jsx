@@ -2,7 +2,7 @@ import React from 'react'
 
 const BigIdea = () => {
   return (
-    <section id='overview' className='border-b-[1px] border-white/10 z-10 relative'>
+    <section id='overview' className='border-b-[1px] border-white/10 z-5 relative'>
       <div className='container mx-auto p-10 lg:py-16 md:px-0 grid grid-cols-1 text-center lg:text-start gap-16 lg:grid-cols-2'>
 
         <div

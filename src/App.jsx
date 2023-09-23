@@ -34,7 +34,7 @@ useEffect(() => {
       if (element) {
         element.scrollIntoView();
       }
-    }, 1000);
+    }, 300);
   }
 
    // close menu on route change

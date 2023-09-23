@@ -22,7 +22,7 @@ const HeroSection = () => {
 
 
   return (
-    <section className="flex flex-col gap-10 lg:h-[calc(100vh-90px)] border-white/10 border-b-[1px]"> 
+    <section className="flex flex-col gap-5 lg:h-[calc(100vh-90px)] border-white/10 border-b-[1px]"> 
     <div className="pt-4 font-bold italic container mx-auto">
      
       <div className="flex justify-center lg:justify-end items-center relative">
@@ -61,7 +61,7 @@ const HeroSection = () => {
       <img src="/assets/flare.png" className="absolute blend-mode max-h-[49rem] w-full object-contain top-[-5rem] left-[-3rem] 
       lg:top-[-23rem] lg:left-[-16rem]" alt="" />
       
-      <article className="h-full box1 relative flex flex-col gap-5 px-10 sm:px-0">
+      <article className="h-full box1 relative flex flex-col gap-7 px-10 sm:px-0">
         <div className="hidden lg:block w-full h-[30vh] z-10 relative">
         <img
           data-aos="fade-up"
@@ -94,11 +94,11 @@ const HeroSection = () => {
           Register
           <img src="/assets/gray star.png" className="absolute twinkle-animation h-4 lg:h-8 object-contain top-[40%] -right-[20%] lg:top-[150%] lg:-right-[240%]" alt="" />
         </button>
-        <img
-          src="/assets/time.png"
-          className="lg:mt-[3vh] object-contain self-center lg:self-start"
-          alt=""
-        />
+        <div className="text-[4rem] flex gap-3 mt-5">
+          <p>00<span className="text-xs">H</span></p>
+          <p>00<span className="text-xs">M</span></p>
+          <p>00<span className="text-xs">S</span></p>
+        </div>
       </article>
 
       <article className="relative box2 overflow-hidden lg:overflow-visible">

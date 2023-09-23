@@ -6,6 +6,7 @@ import { useForm } from "react-hook-form";
 import FailurePopUp from "../components/Popup/FailurePopUp";
 
 const Contact = () => {
+  const baseUrl = "https://backend.getlinked.ai";
   const [message, setMessage] = useState(null);
 
   const {
@@ -15,7 +16,7 @@ const Contact = () => {
     formState: { errors },
   } = useForm();
 
-  const submitRegistration = async (data) =>{
+  const submitMessage = async (data) =>{
 
 var myHeaders = new Headers();
 myHeaders.append("Content-Type", "application/json");
@@ -32,7 +33,7 @@ var requestOptions = {
 fetch(`${baseUrl}/hackathon/contact-form`, requestOptions)
 .then(response => response.text())
 .then(result => {setMessage({
-  type: "registration",
+  type: "contact",
   status: "success",
 })
 reset()
@@ -211,7 +212,7 @@ reset()
             </svg>
           </Link>
 
-          <form onSubmit={handleSubmit(submitRegistration)} className="flex flex-col gap-6">
+          <form onSubmit={handleSubmit(submitMessage)} className="flex flex-col gap-6">
             <h3 className="text-2xl font-CdSemiBold text-lightPurple w-[16rem] lg:w-auto">
               Questions or need assistance?
               <br />

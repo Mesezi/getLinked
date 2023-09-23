@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 
 const Navbar = () => {
+    const location = useLocation()
     const [menuToggle, setMenuToggle] = useState(false)
     
     useEffect(()=>{
@@ -11,6 +12,10 @@ const Navbar = () => {
         }
         return nav.classList.remove('show')
     }, [menuToggle])
+
+    useEffect(()=>{
+        setMenuToggle(false)
+    }, [location])
 
 
   return (

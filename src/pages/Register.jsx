@@ -151,40 +151,7 @@ const Register = () => {
                  left-[101%] lg:top-[100%] lg:left-[90%]"
             alt=""
           />
-          <Link to="/">
-            <svg
-              className="lg:hidden mb-10"
-              width="26"
-              height="26"
-              viewBox="0 0 23 23"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle
-                cx="11.5"
-                cy="11.5"
-                r="11"
-                stroke="url(#paint0_linear_177_298)"
-              />
-              <path
-                d="M12.2666 9.20001L9.19995 12.2667L12.2666 14.5667"
-                stroke="white"
-              />
-              <defs>
-                <linearGradient
-                  id="paint0_linear_177_298"
-                  x1="11.5"
-                  y1="0"
-                  x2="11.5"
-                  y2="23"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#903AFF" />
-                  <stop offset="1" stop-color="#FF26B9" />
-                </linearGradient>
-              </defs>
-            </svg>
-          </Link>
+        
           <div className="space-y-3">
             <h3 className="text-xl lg:text-3xl font-CdSemiBold text-lightPurple w-[16rem] lg:w-auto">
               Register
