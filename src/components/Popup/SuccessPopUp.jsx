@@ -6,7 +6,7 @@ const SuccessPopUp = ({ setMessage, message }) => {
     return (
       <>
         <img
-          src="/src/assets/congratulation.png"
+          src="/assets/congratulation.png"
           className="object-contain max-h-[250px]"
           alt=""
         />
@@ -17,7 +17,7 @@ const SuccessPopUp = ({ setMessage, message }) => {
         <p className="text-sm">
           Yes, it was easy and you did it! <br />
           check your mail box for next step{" "}
-          <img src="/src/assets/wink emoji.png" className="inline" alt="" />
+          <img src="/assets/wink emoji.png" className="inline" alt="" />
         </p>
       </>
     );
@@ -28,7 +28,7 @@ const SuccessPopUp = ({ setMessage, message }) => {
     return (
       <>
         <img
-          src="/src/assets/congratulation.png"
+          src="/assets/congratulation.png"
           className="object-contain max-h-[250px]"
           alt=""
         />
@@ -38,7 +38,7 @@ const SuccessPopUp = ({ setMessage, message }) => {
         <p className="text-sm">
         
           We will get back to you shortly
-          <img src="/src/assets/wink emoji.png" className="inline" alt="" />
+          <img src="/assets/wink emoji.png" className="inline" alt="" />
         </p>
       </>
     );
@@ -50,9 +50,9 @@ const SuccessPopUp = ({ setMessage, message }) => {
         className="w-full p-12 max-w-[699px] bg-[##ffffff03]
         border-[1px] rounded-[5px] border-lightPurple flex flex-col gap-5 justify-center text-center relative"
       >
-        <img src="/src/assets/gray star.png" className="absolute twinkle-animation top-[34%] left-[20%] object-contain h-6 md:h-auto" alt="" />
-        <img src="/src/assets/purple star.png" className="absolute twinkle-animation top-[-5%] right-[-5%] object-contain h-6" alt="" />
-        <img src="/src/assets/gradient star.png" className="absolute twinkle-animation bottom-[-5%] right-10 object-contain h-6 md:h-auto" alt="" />
+        <img src="/assets/gray star.png" className="absolute twinkle-animation top-[34%] left-[20%] object-contain h-6 md:h-auto" alt="" />
+        <img src="/assets/purple star.png" className="absolute twinkle-animation top-[-5%] right-[-5%] object-contain h-6" alt="" />
+        <img src="/assets/gradient star.png" className="absolute twinkle-animation bottom-[-5%] right-10 object-contain h-6 md:h-auto" alt="" />
         {message.type === "registration" && <RegistrationSuccess />}
 
         {message.type === "contact" && <FailurePopUp />}
