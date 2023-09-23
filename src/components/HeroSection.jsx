@@ -1,4 +1,4 @@
-import {useEffect, useRef} from "react";
+import {useEffect, useState, useRef} from "react";
 import useTypewriter from "react-typewriter-hook"
 import Typed from 'typed.js';
 
@@ -19,6 +19,23 @@ const HeroSection = () => {
       typed.destroy();
     };
   }, []);
+
+
+  const [currentTime, setCurrentTime] = useState(new Date());
+
+  useEffect(() => {
+    // Update the current time every second
+    const interval = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000);
+
+    // Clean up the interval on component unmount
+    return () => clearInterval(interval);
+  }, []);
+
+  const hours = currentTime.getHours().toString().padStart(2, '0');
+  const minutes = currentTime.getMinutes().toString().padStart(2, '0');
+  const seconds = currentTime.getSeconds().toString().padStart(2, '0');
 
 
   return (
@@ -94,10 +111,10 @@ const HeroSection = () => {
           Register
           <img src="/assets/gray star.png" className="absolute twinkle-animation h-4 lg:h-8 object-contain top-[40%] -right-[20%] lg:top-[150%] lg:-right-[240%]" alt="" />
         </button>
-        <div className="text-[4rem] flex gap-3 mt-5">
-          <p>00<span className="text-xs">H</span></p>
-          <p>00<span className="text-xs">M</span></p>
-          <p>00<span className="text-xs">S</span></p>
+        <div className="text-[4rem] flex justify-center lg:justify-start gap-4 lg:mt-5 time">
+          <p className="time">{hours}<span className="text-xs">H</span></p>
+          <p className="time">{minutes}<span className="text-xs">M</span></p>
+          <p className="time">{seconds}<span className="text-xs">S</span></p>
         </div>
       </article>
 
