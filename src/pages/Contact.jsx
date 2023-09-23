@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import SuccessPopUp from "../components/Popup/SuccessPopUp";
 import { useForm } from "react-hook-form";
+import FailurePopUp from "../components/Popup/FailurePopUp";
 
 const Contact = () => {
   const [message, setMessage] = useState(null);
@@ -15,7 +16,6 @@ const Contact = () => {
   } = useForm();
 
   const submitRegistration = async (data) =>{
-    console.log(data)
 
 var myHeaders = new Headers();
 myHeaders.append("Content-Type", "application/json");
@@ -47,35 +47,40 @@ reset()
 
   return (
     <main className="flex flex-col min-h-screen">
-       {message && message.status === "success" ? 
-        <SuccessPopUp message={message} setMessage={setMessage} />
-      : <FailurePopUp />
+       {message?.status === "success" &&
+        <SuccessPopUp message={message} setMessage={setMessage} />   
   }
+
+{message?.status === "failure" &&
+       <FailurePopUp setMessage={setMessage}/>
+  }
+
+
       <div className="hidden lg:block">
         <Navbar />
       </div>
 
       <section className="self-stretch container h-full flex gap-3 mx-auto p-10 lg:py-16 md:px-0 relative">
         <img
-          src="/src/assets/gradient star.png"
+          src="/assets/gradient star.png"
           className="absolute twinkle-animation h-4 lg:h-auto 
                   top-[8%] left-[35%] lg:top-[3%] lg:left-[5%]"
           alt=""
         />
         <img
-          src="/src/assets/gray star.png"
+          src="/assets/gray star.png"
           className="absolute twinkle-animation h-6 lg:h-auto 
                   top-[15%] left-[90%] lg:top-[3%] lg:left-[95%]"
           alt=""
         />
         <img
-          src="/src/assets/flare.png"
+          src="/assets/flare.png"
           className="absolute blend-mode max-h-[49rem] w-full object-contain top-[-3%] left-[-26%] 
       lg:top-[-25%] lg:left-[-40%]"
           alt=""
         />
         <img
-          src="/src/assets/flare.png"
+          src="/assets/flare.png"
           className="absolute hidden lg:inline-block blend-mode max-h-[49rem] w-full object-contain
       lg:bottom-[-23%] lg:right-[-60%]"
           alt=""
@@ -160,13 +165,13 @@ reset()
 
         <div className="h-full grow form-box lg:p-20 relative z-10">
           <img
-            src="/src/assets/purple star.png"
+            src="/assets/purple star.png"
             className="absolute twinkle-animation h-4 lg:h-auto 
                             top-[83%] left-[1%] lg:top-[73%] lg:left-[-3%]"
             alt=""
           />
           <img
-            src="/src/assets/white star.png"
+            src="/assets/white star.png"
             className="absolute twinkle-animation h-5 lg:h-auto top-[75%]
                    left-[101%] lg:top-[95%] lg:left-[105%]"
             alt=""

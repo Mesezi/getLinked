@@ -10,7 +10,7 @@ const FailurePopUp = ({ setMessage }) => {
       <img src="/src/assets/gray star.png" className="absolute twinkle-animation top-[34%] left-[20%] object-contain h-6 md:h-auto" alt="" />
       <img src="/src/assets/purple star.png" className="absolute twinkle-animation top-[-5%] right-[-5%] object-contain h-6" alt="" />
       <img src="/src/assets/gradient star.png" className="absolute twinkle-animation bottom-[-5%] right-10 object-contain h-6 md:h-auto" alt="" />
-      <h2>Unable to complete request</h2>
+      <h2 className='font-bold text-lg'>Unable to complete request</h2>
       <p>Try again later</p>
       <button
           onClick={() => setMessage(null)}

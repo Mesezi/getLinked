@@ -86,9 +86,12 @@ const Register = () => {
 
   return (
     <main className="flex flex-col min-h-screen">
-      {message && message.status === "success" ? 
-        <SuccessPopUp message={message} setMessage={setMessage} />
-      : <FailurePopUp />
+       {message?.status === "success" &&
+        <SuccessPopUp message={message} setMessage={setMessage} />   
+  }
+
+{message?.status === "failure" &&
+       <FailurePopUp setMessage={setMessage}/>
   }
 
       <div className="hidden lg:block">
@@ -97,32 +100,32 @@ const Register = () => {
 
       <section className="self-stretch container h-full flex gap-3 mx-auto p-10 lg:py-16 md:px-0 relative">
         <img
-          src="/src/assets/gradient star.png"
+          src="/assets/gradient star.png"
           className="absolute twinkle-animation h-4 lg:h-auto 
                 top-[23%] left-[80%] lg:top-[18%] lg:left-[5%]"
           alt=""
         />
         <img
-          src="/src/assets/gray star.png"
+          src="/assets/gray star.png"
           className="absolute  twinkle-animation h-6 lg:h-auto 
                 top-[43%] left-[1%] lg:top-[10%] lg:left-[80%]"
           alt=""
         />
         <img
-          src="/src/assets/flare.png"
+          src="/assets/flare.png"
           className="absolute blend-mode max-h-[49rem] w-full object-contain top-[8%] left-[-15%] 
     lg:top-[-16%] lg:left-[-35%]"
           alt=""
         />
         <img
-          src="/src/assets/flare.png"
+          src="/assets/flare.png"
           className="absolute hidden lg:inline-block blend-mode max-h-[49rem] w-full object-contain
     lg:bottom-[-23%] lg:right-[-60%]"
           alt=""
         />
         <article className="w-[45%] hidden relative lg:flex justify-center items-center z-10">
           <img
-            src="/src/assets/graphic designer.png"
+            src="/assets/graphic designer.png"
             className="object-contain scale-[1.2]"
             alt=""
           />
@@ -130,20 +133,20 @@ const Register = () => {
 
         <div className="h-full grow form-box lg:p-20 relative z-10">
           <img
-            src="/src/assets/purple star.png"
+            src="/assets/purple star.png"
             className="absolute twinkle-animation h-4 lg:h-auto 
                           top-[76%] left-[99%] lg:top-[70%] lg:left-[-10%]"
             alt=""
           />
 
           <img
-            src="/src/assets/gray star.png"
+            src="/assets/gray star.png"
             className="absolute hidden lg:inline-block twinkle-animation h-4 lg:h-auto 
                           top-[83%] left-[1%] lg:top-[83%] lg:left-[-60%]"
             alt=""
           />
           <img
-            src="/src/assets/white star.png"
+            src="/assets/white star.png"
             className="absolute hidden lg:inline-block twinkle-animation h-5 top-[75%]
                  left-[101%] lg:top-[100%] lg:left-[90%]"
             alt=""
@@ -189,7 +192,7 @@ const Register = () => {
 
             <article className="flex  lg:hidden justify-center items-center z-10">
               <img
-                src="/src/assets/graphic designer.png"
+                src="/assets/graphic designer.png"
                 className="object-contain max-h-[185px]"
                 alt=""
               />
@@ -198,8 +201,8 @@ const Register = () => {
             <div className="flex gap-2 items-baseline">
               <p>Be part of this movement!</p>
               <div className="flex px-3 items-end border-lightPurple border-b-2 border-dashed">
-                <img className="h-6" src="/src/assets/tiny lady.png" alt="" />
-                <img className="h-7" src="/src/assets/tiny man.png" alt="" />
+                <img className="h-6" src="/assets/tiny lady.png" alt="" />
+                <img className="h-7" src="/assets/tiny man.png" alt="" />
               </div>
             </div>
           </div>
