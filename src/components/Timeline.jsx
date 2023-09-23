@@ -19,7 +19,7 @@ const Timeline = () => {
       <div>
         <div className="timeline_2 my-16 flex flex-col gap-3 relative">
           <img
-            src="/src/assets/gray star.png"
+            src="/assets/gray star.png"
             className="absolute twinkle-animation h-4 lg:h-auto bottom-[-4%] -left-6 lg:left-0 lg:bottom-0"
             alt=""
           />
@@ -41,7 +41,7 @@ const Timeline = () => {
               <h3 className="text-lightPurple  font-bold text-lg lg:text-xl relative">
                 Hackathon Announcemment
                 <img
-                  src="/src/assets/purple star.png"
+                  src="/assets/purple star.png"
                   className="absolute twinkle-animation h-4 lg:h-auto 
                             top-[-2rem] left-[10%] lg:top-[-7rem] lg:left-[45%]"
                   alt=""
@@ -117,7 +117,7 @@ const Timeline = () => {
               <p className="text-lightPurple lg:hidden  font-bold text-lg mt-auto">
                 November 18, 2023
                 <img
-                  src="/src/assets/white star.png"
+                  src="/assets/white star.png"
                   className="absolute twinkle-animation h-4 lg:h-auto bottom-0 right-[-70%]"
                   alt=""
                 />
@@ -126,7 +126,7 @@ const Timeline = () => {
             <p className="text-lightPurple hidden lg:block font-bold text-xl right lg:absolute">
               November 18, 2023
               <img
-                src="/src/assets/white star.png"
+                src="/assets/white star.png"
                 className="absolute twinkle-animation h-4 lg:h-auto  -top-10 right-[40%]"
                 alt=""
               />

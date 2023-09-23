@@ -58,7 +58,7 @@ const HeroSection = () => {
      lg:pl-[calc((100%-1024px)/2)] xl:pl-[calc((100%-1280px)/2)] grid-container relative"
     >
 
-      <img src="/src/assets/flare.png" className="absolute blend-mode max-h-[49rem] w-full object-contain top-[-5rem] left-[-3rem] 
+      <img src="/assets/flare.png" className="absolute blend-mode max-h-[49rem] w-full object-contain top-[-5rem] left-[-3rem] 
       lg:top-[-23rem] lg:left-[-16rem]" alt="" />
       
       <article className="h-full box1 relative flex flex-col gap-5 px-10 sm:px-0">
@@ -66,24 +66,24 @@ const HeroSection = () => {
         <img
           data-aos="fade-up"
           data-aos-duration="2000"
-          src="/src/assets/hero-title.png"
+          src="/assets/hero-title.png"
           className="h-full w-full object-contain object-left"
           alt=""
         />
-        <img src="/src/assets/white star.png" className="twinkle-animation absolute h-8 object-contain top-[-10%] left-[9%]" alt="" />
+        <img src="/assets/white star.png" className="twinkle-animation absolute h-8 object-contain top-[-10%] left-[9%]" alt="" />
         
-        <img src="/src/assets/gray star.png" className="absolute twinkle-animation h-4 lg:h-8 object-contain top-0 right-0" alt="" />
+        <img src="/assets/gray star.png" className="absolute twinkle-animation h-4 lg:h-8 object-contain top-0 right-0" alt="" />
         </div>
 
         {/* mobile hero */}
         <div className="lg:hidden mt-6 lg:mt-0 max-h-56 self-center relative">
         <img
-         src="/src/assets/mobile-title.png"
+         src="/assets/mobile-title.png"
           className="h-full w-full object-contain"
           alt=""
         />
-        <img src="/src/assets/white star.png" className="twinkle-animation absolute h-4 object-contain top-[-13%] left-[24%]" alt="" />
-        <img src="/src/assets/gray star.png" className="absolute twinkle-animation h-4 object-contain top-[-13%] right-0" alt="" />
+        <img src="/assets/white star.png" className="twinkle-animation absolute h-4 object-contain top-[-13%] left-[24%]" alt="" />
+        <img src="/assets/gray star.png" className="absolute twinkle-animation h-4 object-contain top-[-13%] right-0" alt="" />
         </div>
 
         <p className="max-w-md mx-auto lg:mx-0 text-center lg:text-start">
@@ -92,10 +92,10 @@ const HeroSection = () => {
         </p>
         <button className="gradient self-center lg:self-start w-40 py-3 relative">
           Register
-          <img src="/src/assets/gray star.png" className="absolute twinkle-animation h-4 lg:h-8 object-contain top-[40%] -right-[20%] lg:top-[150%] lg:-right-[240%]" alt="" />
+          <img src="/assets/gray star.png" className="absolute twinkle-animation h-4 lg:h-8 object-contain top-[40%] -right-[20%] lg:top-[150%] lg:-right-[240%]" alt="" />
         </button>
         <img
-          src="/src/assets/time.png"
+          src="/assets/time.png"
           className="lg:mt-[3vh] object-contain self-center lg:self-start"
           alt=""
         />
@@ -103,15 +103,15 @@ const HeroSection = () => {
 
       <article className="relative box2 overflow-hidden lg:overflow-visible">
         <div className="grow h-full relative">
-        <img src="/src/assets/flare.png" className="absolute hidden lg:block w-full object-contain 
+        <img src="/assets/flare.png" className="absolute hidden lg:block w-full object-contain 
         top-[-70%] scale-[.4] left-[35%]" alt="" />
           <img
-            src="/src/assets/vr.png"
+            src="/assets/vr.png"
             className="lg:absolute lg:bottom-0 w-full h-full object-contain lg:object-right-bottom hero-image"
             alt=""
           />
           <img
-            src="/src/assets/globe-tech.png"
+            src="/assets/globe-tech.png"
             className="absolute bottom-0 globe-animation h-full lg:w-full object-right object-contain"
             alt=""
           />

@@ -11,10 +11,10 @@ const Judging = () => {
         data-aos-offset="400"
         className="flex justify-center items-center relative">
           <div className="h-[7.5rem] w-[7.5rem] hidden lg:block rounded-full judge-circle absolute top-[10%] left-[14%]"></div>
-          <img src="/src/assets/purple star.png" className="absolute twinkle-animation h-4 sm:h-auto top-[-17%] lg:top-[-3%] lg:left-[21%]" alt="" />
-          <img src="/src/assets/gray star.png" className="absolute twinkle-animation h-3 sm:h-auto top-[50%] left-[55%]" alt="" />
-          <img src="/src/assets/flare.png" className="absolute bottom-[-20%] lg:bottom-0 left-[-15%] blend-mode" alt="" />
-          <img src="/src/assets/judges.png" className="object-contain relative z-10" alt="" />
+          <img src="/assets/purple star.png" className="absolute twinkle-animation h-4 sm:h-auto top-[-17%] lg:top-[-3%] lg:left-[21%]" alt="" />
+          <img src="/assets/gray star.png" className="absolute twinkle-animation h-3 sm:h-auto top-[50%] left-[55%]" alt="" />
+          <img src="/assets/flare.png" className="absolute bottom-[-20%] lg:bottom-0 left-[-15%] blend-mode" alt="" />
+          <img src="/assets/judges.png" className="object-contain relative z-10" alt="" />
         </div>
 
         <div className="flex flex-col gap-5 lg:max-w-lg">
@@ -98,14 +98,14 @@ const Judging = () => {
           data-aos-duration="1500" data-aos-offset="400"
             className="mx-auto lg:mx-0 w-40 py-2 font-semibold mt-5 gradient text-md relative">
             Read More
-            <img src="/src/assets/white star.png" className="absolute twinkle-animation h-4 md:h-auto bottom-[56%]
+            <img src="/assets/white star.png" className="absolute twinkle-animation h-4 md:h-auto bottom-[56%]
              left-[165%] lg:bottom-0 lg:left-[-55%]" alt="" />
             </button>
 
           </div>
         </div>
       </div>
-      <img src="/src/assets/flare.png" className="absolute blend-mode object-cover max-w-[50rem] 
+      <img src="/assets/flare.png" className="absolute blend-mode object-cover max-w-[50rem] 
       right-[-100%] bottom-[-8%] lg:right-[-30%] lg:bottom-[-50%]" alt="" />
     </section>
   );

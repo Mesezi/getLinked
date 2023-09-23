@@ -7,11 +7,11 @@ const Footer = () => {
     <div className="container mx-auto flex flex-col lg:flex-row gap-10 justify-between">
     <article className='lg:w-[45%] flex flex-col gap-5 text-sm'>
         
-    <img src={"/src/assets/logo.png"} className='h-6 object-contain self-start' alt="" />
+    <img src={"/assets/logo.png"} className='h-6 object-contain self-start' alt="" />
         <p className='lg:max-w-md leading-[20px] relative'>Getlinked Tech Hackathon is a technology innovation program 
 established by a group of organizations with the aim of showcasing 
 young and talented individuals in the field of technology
-<img src="/src/assets/white star.png" className='absolute object-contain h-3 md:h-5 twinkle-animation top-1/2 lg:top-0 left-[-8%]' alt="" />
+<img src="/assets/white star.png" className='absolute object-contain h-3 md:h-5 twinkle-animation top-1/2 lg:top-0 left-[-8%]' alt="" />
 </p>
 <p className='flex gap-3 mt-auto'><span>Terms of Use</span>
 <svg width="2" height="17" viewBox="0 0 2 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -22,7 +22,7 @@ young and talented individuals in the field of technology
     </article>
 
     <article className='space-y-4 relative'>
-    <img src="/src/assets/gray star.png" className='absolute object-contain h-4 md:h-5 twinkle-animation right-[51%] top-[55%]
+    <img src="/assets/gray star.png" className='absolute object-contain h-4 md:h-5 twinkle-animation right-[51%] top-[55%]
      lg:right-[-23%] lg:top-[15%]' alt="" />
         <h4 className="font-semibold text-lightPurple">Useful Links</h4>
         <ul className='space-y-4 text-sm'>
@@ -56,7 +56,7 @@ young and talented individuals in the field of technology
 
 
     <article className='space-y-4 relative'>
-    <img src="/src/assets/white star.png" className='absolute object-contain h-3 md:h-5 twinkle-animation right-[20%] bottom-20 lg:right-[-5%] lg:bottom-0' alt="" />
+    <img src="/assets/white star.png" className='absolute object-contain h-3 md:h-5 twinkle-animation right-[20%] bottom-20 lg:right-[-5%] lg:bottom-0' alt="" />
         <h4 className="font-semibold text-lightPurple">Contact Us</h4>
         <ul className='space-y-4 text-sm'>
             <li className='flex gap-3 items-start'>
@@ -79,7 +79,7 @@ Lagos State <br />
     </div>
 
 <p className="text-center text-sm mt-16 relative">All rights reserved. © getlinked Ltd.
-<img src="/src/assets/gradient star.png" className='absolute object-contain h-3 md:h-5 twinkle-animation right-1/2 top-[-170%]' alt="" /></p>
+<img src="/assets/gradient star.png" className='absolute object-contain h-3 md:h-5 twinkle-animation right-1/2 top-[-170%]' alt="" /></p>
 </footer>
 
   )

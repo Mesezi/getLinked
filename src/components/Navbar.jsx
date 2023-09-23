@@ -15,8 +15,8 @@ const Navbar = () => {
 
   return (
     <header className='border-b-[1px] border-white/10 w-full relative z-10'>
-        <div className='container z-20 px-10 sm:px-0 mx-auto h-20 lg:h-[90px] flex justify-between items-center'>
-            <NavLink to={'/'}> <img src={"/src/assets/logo.png"} className='h-6 object-contain' alt="" /></NavLink>
+        <div className='container z-50 px-10 sm:px-0 mx-auto h-20 lg:h-[90px] flex justify-between items-center'>
+            <NavLink to={'/'}> <img src={"/assets/logo.png"} className='h-6 object-contain' alt="" /></NavLink>
            
             <nav className='fixed h-full lg:h-auto bg-darkPurple lg:bg-transparent lg:static top-0 left-0 w-full lg:w-auto z-10'>
                 <ul className='flex flex-col lg:flex-row w-full lg:w-auto p-12 lg:p-0

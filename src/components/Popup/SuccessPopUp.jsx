@@ -1,4 +1,5 @@
 import React from "react";
+import FailurePopUp from "./FailurePopUp";
 
 const SuccessPopUp = ({ setMessage, message }) => {
   const RegistrationSuccess = () => {
@@ -18,13 +19,27 @@ const SuccessPopUp = ({ setMessage, message }) => {
           check your mail box for next step{" "}
           <img src="/src/assets/wink emoji.png" className="inline" alt="" />
         </p>
+      </>
+    );
+  };
 
-        <button
-          onClick={() => setMessage(null)}
-          className="gradient py-3 w-full"
-        >
-          Back
-        </button>
+
+  const ContactSuccess = () => {
+    return (
+      <>
+        <img
+          src="/src/assets/congratulation.png"
+          className="object-contain max-h-[250px]"
+          alt=""
+        />
+        <h3 className="font-semibold text-xl lg:text-3xl">
+          Message sent!
+        </h3>
+        <p className="text-sm">
+        
+          We will get back to you shortly
+          <img src="/src/assets/wink emoji.png" className="inline" alt="" />
+        </p>
       </>
     );
   };
@@ -40,7 +55,13 @@ const SuccessPopUp = ({ setMessage, message }) => {
         <img src="/src/assets/gradient star.png" className="absolute twinkle-animation bottom-[-5%] right-10 object-contain h-6 md:h-auto" alt="" />
         {message.type === "registration" && <RegistrationSuccess />}
 
-        {message.type === "contact" && ""}
+        {message.type === "contact" && <FailurePopUp />}
+        <button
+          onClick={() => setMessage(null)}
+          className="gradient py-3 w-full"
+        >
+          Back
+        </button>
       </article>
     </div>
   );
